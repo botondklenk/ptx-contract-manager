@@ -9,7 +9,7 @@ import {
   ContractMember,
   ContractServiceOffering,
   ContractServiceOfferingDocument,
-  ContractServiceOfferingPolicieDocument,
+  ContractServiceOfferingPolicyDocument,
   // ContractDataProcessingDocument,
 } from 'interfaces/schemas.interface';
 import { IPolicyInjection } from 'interfaces/policy.interface';
@@ -582,7 +582,7 @@ export class ContractService {
           participant: participant,
           serviceOffering: serviceOffering,
           policies:
-            [] as unknown as Types.DocumentArray<ContractServiceOfferingPolicieDocument>,
+            [] as unknown as Types.DocumentArray<ContractServiceOfferingPolicyDocument>,
         } as ContractServiceOfferingDocument;
         contract.serviceOfferings.push(offering);
         offering =

@@ -101,6 +101,9 @@ const ContractSchema: Schema = new Schema(
       enum: ['signed', 'revoked', 'pending'],
       default: 'pending',
     },
+    vla: {
+      type: mongoose.Schema.Types.Mixed,
+    },
     jsonLD: {
       type: String,
     },
